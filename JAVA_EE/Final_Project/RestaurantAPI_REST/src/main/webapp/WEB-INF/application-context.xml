@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-autowire="byName">
+
+    <bean id="employeeService" class="dream.development.service.EmployeeService"/>
+    <bean id="menuService" class="dream.development.service.MenuService"/>
+    <bean id="dishService" class="dream.development.service.DishService"/>
+    <bean id="ordersService" class="dream.development.service.OrdersService"/>
+
+    <bean id="employeeDao" class="dream.development.dao.hibernate.HEmployeeDao"/>
+    <bean id="menuDao" class="dream.development.dao.hibernate.HMenuDao"/>
+    <bean id="dishDao" class="dream.development.dao.hibernate.HDishDao"/>
+    <bean id="ordersDao" class="dream.development.dao.hibernate.HOrderDao"/>
+
+</beans>

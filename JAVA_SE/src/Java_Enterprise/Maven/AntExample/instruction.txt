@@ -1,0 +1,19 @@
+//Control version
+
+ant -version
+
+//In Idea Terminal type;
+
+ant clean dist
+
+//Ant will perform:
+//1. Clean folders that set in build.xml(task clean)
+//2. Create folder that set in build.xml(task init)
+//3. Compile project that set in build.xml(task compile)
+//4. Compile projects test that set in build.xml(task compile.test)
+//5. Compile projects test-report that set in build.xml(task test)
+//6. Compile jar file that set in build.xml(dist test)
+
+//Run jar file;
+
+ant -jar dist\AntExample.jar

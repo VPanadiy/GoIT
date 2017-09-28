@@ -1,0 +1,7 @@
+<suite name="Suite1">
+    <test name="Executor Test">
+        <classes>
+            <class name="Java_Enterprise.Maven.AntExample.Executor.Test.SerialExecutorTest"/>
+        </classes>
+    </test>
+</suite>

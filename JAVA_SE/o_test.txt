@@ -1,0 +1,2 @@
+Text in i_test.txt are used to read and write it to o_test.txt by bytes.
+To run Use package I_O_Stream, class CopyBytes.java

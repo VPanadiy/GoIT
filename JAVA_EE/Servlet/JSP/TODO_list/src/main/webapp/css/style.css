@@ -1,0 +1,93 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: right;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+label{
+    display:inline-block;
+    float:left;
+    clear: both;
+    width: 125px;
+    text-align: right;
+    margin: 5px;
+}
+
+input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 250px;
+    font-family: serif;
+    font-size: 14px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+textarea {
+    resize: none;
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 250px;
+    font-family: serif;
+    font-size: 14px;
+}
+
+textarea:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 75px;
+}
+
+#taskSubmit:hover {
+    opacity:0.5
+}
+
+#completeButtonDone:hover {
+    opacity:0.5
+}
+
+#completeButtonUnDone:hover {
+    opacity:0.5
+}
+
+#deleteButtonSubmit:hover {
+    opacity:0.5
+}
+
+table {
+    table-layout: fixed;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: lime;
+    border: 1px solid black;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+}

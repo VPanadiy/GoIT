@@ -1,0 +1,22 @@
+---------------------POPULATE---------------------
+Time of adding 1000000 items in ArrayList are: 78 ms.
+ime of adding 1000000 items in LinkedList are: 2231 ms.
+Time of adding 1000000 items in HashSet are: 1310 ms.
+Time of adding 1000000 items in TreeSet are: 328 ms.
+Time of adding 1000000 items in Stack are: 1326 ms.
+Time of adding 1000000 items in Vector are: 47 ms.
+Time of adding 1000000 items in ArrayDeque are: 171 ms.
+Time of adding 1000000 items in PriorityQueue are: 172 ms.
+Time of adding 1000000 items in LinkedHashSet are: 234 ms.
+Time of "putting" 1000000 items in HashMap are: 3619 ms.
+Time of "putting" 1000000 items in TreeMap are: 3042 ms.
+Time of "putting" 1000000 items in LinkedHashMap are: 172 ms.
+--------------------------------------------------
+
+------------------ADD FROM BEGIN------------------
+Time of adding 1000000 items from 0 in ArrayList are: 218 ms.
+Time of adding 1000000 items from 0 in LinkedList are: 47 ms.
+Time of adding 1000000 items from 0 in HashSet are: 281 ms.
+Time of adding 1000000 items from 0 in TreeSet are: 4352 ms.
+Time of adding 1000000 items from 0 in Stack are: 62 ms.
+Time of adding 1000000 items from 0 in Vector are: 47 ms.

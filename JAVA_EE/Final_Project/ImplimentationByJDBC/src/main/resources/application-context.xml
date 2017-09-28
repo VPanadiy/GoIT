@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <tx:annotation-driven transaction-manager="txManager" proxy-target-class="true"/>
+
+    <bean id="main" class="dream.application.Boot_API_Controller">
+        <property name="employeeController" ref="employeeController"/>
+        <property name="warehouseController" ref="warehouseController"/>
+        <property name="dishController" ref="dishController"/>
+        <property name="ingredientController" ref="ingredientController"/>
+        <property name="dishIngredientController" ref="dishIngredientController"/>
+        <property name="menuController" ref="menuController"/>
+        <property name="menuDishesController" ref="menuDishesController"/>
+        <property name="guestOrderController" ref="guestOrderController"/>
+        <property name="dishCreatedController" ref="dishCreatedController"/>
+        <property name="dishOrderController" ref="dishOrderController"/>
+    </bean>
+
+    <bean id="warehouseController" class="dream.application.model.controllers.WarehouseController">
+        <property name="insertQueryDao" ref="warehouseDao"/>
+        <property name="getAllQueryDao" ref="warehouseDao"/>
+        <property name="getByNameDao" ref="warehouseDao"/>
+        <property name="updateQueryDao" ref="warehouseDao"/>
+        <property name="getAllWithConditionQueryDao" ref="warehouseDao"/>
+        <property name="jdbcIngredientDao" ref="ingredientDao"/>
+    </bean>
+
+    <bean id="employeeController" class="dream.application.model.controllers.EmployeeController">
+        <property name="getAllQueryDao" ref="employeeDao"/>
+        <property name="getByNameDao" ref="employeeDao"/>
+        <property name="removeByNameQueryDao" ref="employeeDao"/>
+        <property name="insertQueryDao" ref="employeeDao"/>
+    </bean>
+
+    <bean id="dishController" class="dream.application.model.controllers.DishController">
+        <property name="jdbcDishIngredientDao" ref="dishIngredientDao"/>
+        <property name="jdbcMenuDishesDao" ref="menuDishesDao"/>
+        <property name="jdbcIngredientDao" ref="ingredientDao"/>
+        <property name="jdbcWarehouseDao" ref="warehouseDao"/>
+        <property name="getByIdDao" ref="dishDao"/>
+        <property name="getTotalRowDao" ref="dishDao"/>
+        <property name="getByNameDao" ref="dishDao"/>
+        <property name="insertQueryDao" ref="dishDao"/>
+        <property name="removeByNameQueryDao" ref="dishDao"/>
+    </bean>
+
+    <bean id="ingredientController" class="dream.application.model.controllers.IngredientController">
+        <property name="getAllQueryDao" ref="ingredientDao"/>
+        <property name="getByIdDao" ref="ingredientDao"/>
+        <property name="getTotalRowDao" ref="ingredientDao"/>
+        <property name="insertQueryDao" ref="ingredientDao"/>
+        <property name="getByNameDao" ref="ingredientDao"/>
+        <property name="removeByNameQueryDao" ref="ingredientDao"/>
+    </bean>
+
+    <bean id="dishIngredientController" class="dream.application.model.controllers.DishIngredientController">
+        <property name="getTotalRowDao" ref="dishIngredientDao"/>
+        <property name="getByIdDao" ref="dishIngredientDao"/>
+        <property name="insertQueryDao" ref="dishIngredientDao"/>
+        <property name="getAllQueryDao" ref="dishIngredientDao"/>
+    </bean>
+
+    <bean id="menuController" class="dream.application.model.controllers.MenuController">
+        <property name="getAllQueryDao" ref="menuDao"/>
+        <property name="getByIdDao" ref="menuDao"/>
+        <property name="getByNameDao" ref="menuDao"/>
+        <property name="insertQueryDao" ref="menuDao"/>
+        <property name="removeByNameQueryDao" ref="menuDao"/>
+        <property name="jdbcMenuDishesDao" ref="menuDishesDao"/>
+    </bean>
+
+    <bean id="menuDishesController" class="dream.application.model.controllers.MenuDishesController">
+        <property name="getTotalRowDao" ref="menuDishesDao"/>
+        <property name="getByIdDao" ref="menuDishesDao"/>
+        <property name="insertQueryDao" ref="menuDishesDao"/>
+        <property name="removeByIdQueryDao" ref="menuDishesDao"/>
+        <property name="getAllQueryDao" ref="menuDishesDao"/>
+        <property name="updateQueryDao" ref="menuDishesDao"/>
+        <property name="removeByNameQueryDao" ref="menuDishesDao"/>
+    </bean>
+
+    <bean id="guestOrderController" class="dream.application.model.controllers.GuestOrderController">
+        <property name="getAllQueryDao" ref="guestOrderDao"/>
+        <property name="insertQueryDao" ref="guestOrderDao"/>
+        <property name="getByNameDao" ref="guestOrderDao"/>
+        <property name="getByIdDao" ref="guestOrderDao"/>
+        <property name="removeByIdQueryDao" ref="guestOrderDao"/>
+        <property name="jdbcDishOrderDao" ref="dishOrderDao"/>
+        <property name="updateQueryDao" ref="dishOrderDao"/>
+        <property name="getTotalRowDao" ref="guestOrderDao"/>
+        <property name="jdbcGuestOrderDao" ref="guestOrderDao"/>
+    </bean>
+
+    <bean id="dishOrderController" class="dream.application.model.controllers.DishOrderController">
+        <property name="getAllQueryDao" ref="dishOrderDao"/>
+        <property name="getAllWithConditionQueryDao" ref="dishOrderDao"/>
+    </bean>
+
+    <bean id="dishCreatedController" class="dream.application.model.controllers.DishCreatedController">
+        <property name="getAllQueryDao" ref="dishCreatedDao"/>
+        <property name="insertQueryDao" ref="dishCreatedDao"/>
+        <property name="getTotalRowDao" ref="dishCreatedDao"/>
+    </bean>
+
+    <bean id="warehouseDao" class="dream.application.model.jdbc.JDBCWarehouseDao">
+        <constructor-arg index="0" ref="ingredient"/>
+        <constructor-arg index="1" ref="warehouse"/>
+        <property name="jdbcIngredientDao" ref="ingredientDao"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="employeeDao" class="dream.application.model.jdbc.JDBCEmployeeDao">
+        <constructor-arg index="0" ref="employee"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="dishDao" class="dream.application.model.jdbc.JDBCDishDao">
+        <constructor-arg index="0" ref="dish"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="ingredientDao" class="dream.application.model.jdbc.JDBCIngredientDao">
+        <constructor-arg index="0" ref="ingredient"/>
+        <property name="jdbcWarehouseDao" ref="warehouseDao"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="dishIngredientDao" class="dream.application.model.jdbc.JDBCDishIngredientDao">
+        <constructor-arg index="0" ref="dishIngredient"/>
+        <constructor-arg index="1" ref="ingredient"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="jdbcIngredientDao" ref="ingredientDao"/>
+        <property name="dishController" ref="dishController"/>
+        <property name="jdbcDishDao" ref="dishDao"/>
+    </bean>
+
+    <bean id="menuDao" class="dream.application.model.jdbc.JDBCMenuDao">
+        <constructor-arg index="0" ref="menu"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="menuDishesDao" class="dream.application.model.jdbc.JDBCMenuDishesDao">
+        <constructor-arg index="0" ref="menuDishes"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="jdbcDishDao" ref="dishDao"/>
+        <property name="jdbcMenuDao" ref="menuDao"/>
+    </bean>
+
+    <bean id="guestOrderDao" class="dream.application.model.jdbc.JDBCGuestOrderDao">
+        <constructor-arg index="0" ref="guestOrder"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="jdbcEmployeeDao" ref="employeeDao"/>
+        <property name="jdbcDishOrderDao" ref="dishOrderDao"/>
+    </bean>
+
+    <bean id="dishOrderDao" class="dream.application.model.jdbc.JDBCDishOrderDao">
+        <constructor-arg index="0" ref="dishOrder"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="jdbcDishDao" ref="dishDao"/>
+        <property name="jdbcGuestOrderDao" ref="guestOrderDao"/>
+    </bean>
+
+    <bean id="dishCreatedDao" class="dream.application.model.jdbc.JDBCDishCreatedDao">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="jdbcDishDao" ref="dishDao"/>
+        <property name="jdbcEmployeeDao" ref="employeeDao"/>
+        <property name="jdbcDishOrderDao" ref="dishOrderDao"/>
+        <property name="jdbcGuestOrderDao" ref="guestOrderDao"/>
+        <constructor-arg index="0" ref="dishCreated"/>
+    </bean>
+
+    <bean name="ingredient" class="dream.application.model.impl.Ingredient"/>
+    <bean name="warehouse" class="dream.application.model.impl.Warehouse"/>
+    <bean name="employee" class="dream.application.model.impl.Employee"/>
+    <bean name="dish" class="dream.application.model.impl.Dish"/>
+    <bean name="menu" class="dream.application.model.impl.Menu"/>
+    <bean name="menuDishes" class="dream.application.model.impl.MenuDishes"/>
+    <bean name="dishIngredient" class="dream.application.model.impl.DishIngredient"/>
+    <bean name="guestOrder" class="dream.application.model.impl.GuestOrder"/>
+    <bean name="dishOrder" class="dream.application.model.impl.DishOrder"/>
+    <bean name="dishCreated" class="dream.application.model.impl.DishCreated"/>
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driver.class}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="minPoolSize" value="${jdbc.min.connections}"/>
+        <property name="maxPoolSize" value="${jdbc.max.connections}"/>
+        <property name="acquireIncrement" value="${jdbc.acquire.increment}"/>
+    </bean>
+
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:jdbc.properties"/>
+    </bean>
+
+</beans>

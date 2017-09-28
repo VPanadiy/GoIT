@@ -1,0 +1,28 @@
+//Go to the local disk, where file lying
+
+D:
+
+//Go to the folde, where file lying
+
+cd MyProjects(JAVA)\GoIT\src\Java_Core\HelloWorld_console
+
+// check if we are in the right folder
+
+dir
+
+//If file exist. Then create .class file
+
+javac HelloWorld.java
+
+//Run file
+
+java HelloWorld
+
+//* If .java file exist package path then project path
+
+cd MyProjects(JAVA)\GoIT\src\
+
+//Run with package path
+
+java Java_Core.HelloWorld_console.HelloWorld 
+

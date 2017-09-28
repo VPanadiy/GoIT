@@ -1,0 +1,35 @@
+//Control version
+
+mvn -v
+
+//cd to default folder;
+
+D:
+cd MyProjects(JAVA)\GoIT\src\Java_Enterprise\Maven
+
+//generate maven;
+
+mvn archetype:generate
+
+//Press Enter till maven asked to set groupID (press 2 Enter button(maven use default value)). 
+//GroupId folder for src files;
+
+maven
+
+//artifactID - Folder where maven create project
+
+mavenexample
+
+//Press Enter till maven project create (press 3 Enter button(maven use default value)). 
+
+//Run maven
+
+mvn clean package
+
+//Run jar files
+
+java -jar target/MavenExample-1.0-SNAPSHOT.jar
+
+
+
+

@@ -1,0 +1,2 @@
+Text in i_Scan_test.txt are used to read and write it to buffer.
+To run Use package I_O_Stream, class Scan_i_o.java

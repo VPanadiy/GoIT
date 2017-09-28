@@ -1,0 +1,2 @@
+Text in i_test.txt are used to read and write it to o_test_character.txt by characters.
+To run Use package I_O_Stream, class CopyCharacter.java

@@ -1,0 +1,235 @@
+---------------------POPULATE---------------------
+Time of adding 100000 items in ArrayList are: 15 ms.
+Time of adding 100000 items in LinkedList are: 55 ms.
+Time of adding 100000 items in HashSet are: 75 ms.
+Time of adding 100000 items in TreeSet are: 68 ms.
+Time of adding 100000 items in Stack are: 20 ms.
+Time of adding 100000 items in Vector are: 15 ms.
+Time of adding 100000 items in ArrayDeque are: 14 ms.
+Time of adding 100000 items in PriorityQueue are: 48 ms.
+Time of adding 100000 items in LinkedHashSet are: 35 ms.
+Time of "putting" 100000 items in HashMap are: 26 ms.
+Time of "putting" 100000 items in TreeMap are: 64 ms.
+Time of "putting" 100000 items in LinkedHashMap are: 1601 ms.
+--------------------------------------------------
+
+------------------ADD FROM BEGIN------------------
+Time of adding 100000 items from 0 in ArrayList are: 12 ms.
+Time of adding 100000 items from 0 in LinkedList are: 14 ms.
+Time of adding 100000 items from 0 in HashSet are: 92 ms.
+Time of adding 100000 items from 0 in TreeSet are: 49 ms.
+Time of adding 100000 items from 0 in Stack are: 13 ms.
+Time of adding 100000 items from 0 in Vector are: 14 ms.
+Time of adding 100000 items from 0 in ArrayDeque are: 12 ms.
+Time of adding 100000 items from 0 in PriorityQueue are: 41 ms.
+Time of adding 100000 items from 0 in LinkedHashSet are: 1163 ms.
+Time of "putting" 100000 items from 0 in HashMap are: 44 ms.
+Time of "putting" 100000 items from 0 in TreeMap are: 60 ms.
+Time of "putting" 100000 items from 0 in LinkedHashMap are: 33 ms.
+--------------------------------------------------
+
+------------------ADD FROM CENTER-----------------
+Time of adding 100000 items from 50000 in ArrayList are: 4 ms.
+Time of adding 100000 items from 50000 in LinkedList are: 2 ms.
+Time of adding 100000 items from 50000 in HashSet are: 216 ms.
+Time of adding 100000 items from 50000 in TreeSet are: 40 ms.
+Time of adding 100000 items from 50000 in Stack are: 4 ms.
+Time of adding 100000 items from 50000 in Vector are: 3 ms.
+Time of adding 100000 items from 50000 in ArrayDeque are: 2 ms.
+Time of adding 100000 items from 50000 in PriorityQueue are: 4 ms.
+Time of adding 100000 items from 50000 in LinkedHashSet are: 5 ms.
+Time of "putting" 100000 items from 50000 in HashMap are: 9 ms.
+Time of "putting" 100000 items from 50000 in TreeMap are: 17 ms.
+Time of "putting" 100000 items from 50000 in LinkedHashMap are: 6 ms.
+--------------------------------------------------
+
+-------------------ADD FROM END-------------------
+Time of adding 100000 items from 99999 in ArrayList are: 0 ms.
+Time of adding 100000 items from 99999 in LinkedList are: 0 ms.
+Time of adding 100000 items from 99999 in HashSet are: 0 ms.
+Time of adding 100000 items from 99999 in TreeSet are: 0 ms.
+Time of adding 100000 items from 99999 in Stack are: 0 ms.
+Time of adding 100000 items from 99999 in Vector are: 0 ms.
+Time of adding 100000 items from 99999 in ArrayDeque are: 0 ms.
+Time of adding 100000 items from 99999 in PriorityQueue are: 0 ms.
+Time of adding 100000 items from 99999 in LinkedHashSet are: 0 ms.
+Time of "putting" 100000 items from 99999 in HashMap are: 0 ms.
+Time of "putting" 100000 items from 99999 in TreeMap are: 0 ms.
+Time of "putting" 100000 items from 99999 in LinkedHashMap are: 0 ms.
+--------------------------------------------------
+
+------------------GET FROM BEGIN------------------
+Time of getting 100000 items from 0 in ArrayList are: 10 ms.
+Time of getting 100000 items from 0 in LinkedList are: 32823 ms.
+Time of getting 100000 items from 0 in Stack are: 15 ms.
+Time of getting 100000 items from 0 in Vector are: 17 ms.
+Time of getting 100000 first items in ArrayDeque are: 10 ms.
+Time of peeking 100000 items in PriorityQueue are: 9 ms.
+Time of getting 100000 items from 0 in HashMap are: 22 ms.
+Time of getting 100000 items from 0 in TreeMap are: 24 ms.
+Time of getting 100000 items from 0 in LinkedHashMap are: 7 ms.
+--------------------------------------------------
+
+-----------------GET FROM CENTER------------------
+Time of getting 100000 items from 50000 in ArrayList are: 1 ms.
+Time of getting 100000 items from 50000 in LinkedList are: 28969 ms.
+Time of getting 100000 items from 50000 in Stack are: 1 ms.
+Time of getting 100000 items from 50000 in Vector are: 1 ms.
+Time of getting 50000 first items in ArrayDeque are: 0 ms.
+Time of peeking 50000 items in PriorityQueue are: 0 ms.
+Time of getting 100000 items from 50000 in HashMap are: 2 ms.
+Time of getting 100000 items from 50000 in TreeMap are: 4 ms.
+Time of getting 100000 items from 50000 in LinkedHashMap are: 1 ms.
+--------------------------------------------------
+
+-------------------GET FROM END-------------------
+Time of getting 100000 items from 99999 in ArrayList are: 0 ms.
+Time of getting 100000 items from 99999 in LinkedList are: 1 ms.
+Time of getting 100000 items from 99999 in Stack are: 0 ms.
+Time of getting 100000 items from 99999 in Vector are: 0 ms.
+Time of getting 1 first items in ArrayDeque are: 0 ms.
+Time of peeking 1 items in PriorityQueue are: 0 ms.
+Time of getting 100000 items from 99999 in HashMap are: 0 ms.
+Time of getting 100000 items from 99999 in TreeMap are: 0 ms.
+Time of getting 100000 items from 99999 in LinkedHashMap are: 0 ms.
+--------------------------------------------------
+
+----------------CONTAIN FROM BEGIN----------------
+Time of searching 0 in ArrayList are: 9 ms.
+Time of searching 0 in LinkedList are: 24 ms.
+Time of searching 0 in Stack are: 19 ms.
+Time of searching 0 in Vector are: 13 ms.
+Time of searching 0 in ArrayDeque are: 16 ms.
+Time of searching 0 in PriorityQueue are: 13 ms.
+Time of searching 0 in HashMap are: 19 ms.
+Time of searching 0 in TreeMap are: 22 ms.
+Time of searching 0 in LinkedHashMap are: 11 ms.
+Time of searching 0 in HashSet are: 12 ms.
+Time of removing 0 in TreeSet are: 24 ms.
+Time of removing 0 in LinkedHashSet are: 11 ms.
+--------------------------------------------------
+
+---------------CONTAIN FROM CENTER----------------
+Time of searching 50000 in ArrayList are: 9258 ms.
+Time of searching 50000 in LinkedList are: 26508 ms.
+Time of searching 50000 in Stack are: 9506 ms.
+Time of searching 50000 in Vector are: 10145 ms.
+Time of searching 50000 in ArrayDeque are: 12479 ms.
+Time of searching 50000 in PriorityQueue are: 25361 ms.
+Time of searching 50000 in HashMap are: 54641 ms.
+Time of searching 50000 in TreeMap are: 82723 ms.
+Time of searching 50000 in LinkedHashMap are: 94386 ms.
+Time of searching 50000 in HashSet are: 5 ms.
+Time of removing 50000 in TreeSet are: 61 ms.
+Time of removing 50000 in LinkedHashSet are: 3 ms.
+--------------------------------------------------
+
+-----------------CONTAIN FROM END-----------------
+Time of searching 99999 in ArrayList are: 21419 ms.
+Time of searching 99999 in LinkedList are: 109612 ms.
+Time of searching 99999 in Stack are: 22588 ms.
+Time of searching 99999 in Vector are: 24428 ms.
+Time of searching 99999 in ArrayDeque are: 31408 ms.
+Time of searching 99999 in PriorityQueue are: 75192 ms.
+Time of searching 99999 in HashMap are: 121268 ms.
+Time of searching 99999 in TreeMap are: 168231 ms.
+Time of searching 99999 in LinkedHashMap are: 204332 ms.
+Time of searching 99999 in HashSet are: 1 ms.
+Time of removing 99999 in TreeSet are: 5 ms.
+Time of removing 99999 in LinkedHashSet are: 1 ms.
+--------------------------------------------------
+
+----------------REMOVE FROM BEGIN-----------------
+Time of removing 100000 items from 0 in ArrayList are: 5369 ms.
+Time of removing 100000 items from 0 in LinkedList are: 73091 ms.
+Time of removing 100000 items from 0 in Stack are: 5897 ms.
+Time of removing 100000 items from 0 in Vector are: 8826 ms.
+Time of removing 100000 last items in ArrayDeque are: 12 ms.
+Time of polling 100000 items in PriorityQueue are: 71 ms.
+Time of removing 100000 items from 0 in HashMap are: 13 ms.
+Time of removing 100000 items from 0 in TreeMap are: 43 ms.
+Time of removing 100000 items from 0 in LinkedHashMap are: 25 ms.
+Time of removing 100000 items from 0 in HashSet are: 16 ms.
+Time of removing 100000 items from 0 in TreeSet are: 32 ms.
+Time of removing 100000 items from 0 in LinkedHashSet are: 17 ms.
+--------------------------------------------------
+
+---------------REMOVE FROM CENTER-----------------
+Time of removing 100000 items from 50000 in ArrayList are: 797 ms.
+Time of removing 100000 items from 50000 in LinkedList are: 31899 ms.
+Time of removing 100000 items from 50000 in Stack are: 755 ms.
+Time of removing 100000 items from 50000 in Vector are: 857 ms.
+Time of removing 50000 last items in ArrayDeque are: 0 ms.
+Time of polling 50000 items in PriorityQueue are: 11 ms.
+Time of removing 100000 items from 50000 in HashMap are: 2 ms.
+Time of removing 100000 items from 50000 in TreeMap are: 20 ms.
+Time of removing 100000 items from 50000 in LinkedHashMap are: 24 ms.
+Time of removing 100000 items from 50000 in HashSet are: 3 ms.
+Time of removing 100000 items from 50000 in TreeSet are: 28 ms.
+Time of removing 100000 items from 50000 in LinkedHashSet are: 5 ms.
+--------------------------------------------------
+
+-----------------REMOVE FROM END------------------
+Time of removing 100000 items from 99999 in ArrayList are: 0 ms.
+Time of removing 100000 items from 99999 in LinkedList are: 0 ms.
+Time of removing 100000 items from 99999 in Stack are: 0 ms.
+Time of removing 100000 items from 99999 in Vector are: 0 ms.
+Time of removing 1 last items in ArrayDeque are: 0 ms.
+Time of polling 1 items in PriorityQueue are: 0 ms.
+Time of removing 100000 items from 99999 in HashMap are: 1 ms.
+Time of removing 100000 items from 99999 in TreeMap are: 0 ms.
+Time of removing 100000 items from 99999 in LinkedHashMap are: 0 ms.
+Time of removing 100000 items from 99999 in HashSet are: 0 ms.
+Time of removing 100000 items from 99999 in TreeSet are: 0 ms.
+Time of removing 100000 items from 99999 in LinkedHashSet are: 0 ms.
+--------------------------------------------------
+
+------------------SET FROM BEGIN------------------
+Time of setting 100000 items from 0 in ArrayList are: 14 ms.
+Time of setting 100000 items from 0 in LinkedList are: 45996 ms.
+Time of setting 100000 items from 0 in Stack are: 12 ms.
+Time of setting 100000 items from 0 in Vector are: 4 ms.
+--------------------------------------------------
+
+-----------------SET FROM CENTER------------------
+Time of setting 100000 items from 50000 in ArrayList are: 2 ms.
+Time of setting 100000 items from 50000 in LinkedList are: 28708 ms.
+Time of setting 100000 items from 50000 in Stack are: 2 ms.
+Time of setting 100000 items from 50000 in Vector are: 1 ms.
+--------------------------------------------------
+
+-------------------SET FROM END-------------------
+Time of setting 100000 items from 99999 in ArrayList are: 0 ms.
+Time of setting 100000 items from 99999 in LinkedList are: 0 ms.
+Time of setting 100000 items from 99999 in Stack are: 0 ms.
+Time of setting 100000 items from 99999 in Vector are: 0 ms.
+--------------------------------------------------
+
+------------ADD BY ITERATOR FROM BEGIN------------
+Time of iterator adding 100000 items from 0 in ArrayList are: 3573 ms.
+Time of iterator adding 100000 items from 0 in LinkedList are: 88 ms.
+Time of iterator adding 100000 items from 0 in Stack are: 3513 ms.
+Time of iterator adding 100000 items from 0 in Vector are: 4423 ms.
+--------------------------------------------------
+
+-----------ADD BY ITERATOR FROM CENTER------------
+Time of iterator adding 100000 items from 50000 in ArrayList are: 3582 ms.
+Time of iterator adding 100000 items from 50000 in LinkedList are: 3 ms.
+Time of iterator adding 100000 items from 50000 in Stack are: 4246 ms.
+Time of iterator adding 100000 items from 50000 in Vector are: 4922 ms.
+--------------------------------------------------
+
+-------------ADD BY ITERATOR FROM END-------------
+Time of iterator adding 100000 items from 99999 in ArrayList are: 0 ms.
+Time of iterator adding 100000 items from 99999 in LinkedList are: 0 ms.
+Time of iterator adding 100000 items from 99999 in Stack are: 0 ms.
+Time of iterator adding 100000 items from 99999 in Vector are: 1 ms.
+--------------------------------------------------
+
+----------------REMOVE BY ITERATOR----------------
+Time of iterator removing 100000 items in ArrayList are: 31 ms.
+Time of iterator removing 100000 items in LinkedList are: 19 ms.
+Time of iterator removing 100000 items in Stack are: 22 ms.
+Time of iterator removing 100000 items in Vector are: 60 ms.
+--------------------------------------------------
+
